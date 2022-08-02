@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.container header h1 {
+    font-size: 2.4rem;
+}
+.container :is(header) h1, h3 {
+    margin: 1rem 0;
+}
+.container .body > * {
+    width: 100%;
+}
+.container input {
+    padding: .5rem 0 .5rem .5rem;
+    margin: .2rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+}
+.container button.btn {
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .5rem;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.container .btn:hover {
+    background-color: rgb(211, 12, 12);
+}
+.container .body .money {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+:is(.container .body .money) > input {
+    flex: 1
+}
+.container .body .money > span{
+    background-color: red;
+    padding: .5rem;
+}
+.container table {
+    margin-top: 1rem;
+}
+.container table thead {
+    text-align: center;
+    background-color: red;
+    text-transform: capitalize;
+}
+.container table tbody td {
+    background-color: white;
+    color: black;
+    padding: .1rem;
+}
+.delete, .update {
+    font-size: .7rem;
+}
+.clear {
+    margin-top: .3rem;
+}
